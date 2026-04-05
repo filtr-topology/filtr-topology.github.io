@@ -41,7 +41,7 @@
   <!-- TODO: Replace with your lab/institution Twitter handle -->
   <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
   <!-- TODO: Replace with first author's Twitter handle -->
-  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
+  <meta name="twitter:creator" content="@louis_m01">
   <!-- TODO: Same as paper title above -->
   <meta name="twitter:title" content="FILTR: Extracting Topological Features from Pretrained 3D Models">
   <!-- TODO: Same as description above -->
@@ -147,7 +147,12 @@
     "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
     "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
     "abstract": "Recent advances in pretraining 3D point cloud encoders (e.g., Point-BERT, Point-MAE) have produced powerful models, whose abilities are typically evaluated on geometric or semantic tasks. At the same time, topological descriptors have been shown to provide informative summaries of a shape's multiscale structure. In this paper we pose the question whether topological information can be derived from features produced by 3D encoders. To address this question, we first introduce DONUT, a synthetic benchmark with controlled topological complexity, and propose FILTR (Filtration Transformer), a learnable framework to predict persistence diagrams directly from frozen encoders. FILTR adapts a transformer decoder to treat diagram generation as a set prediction task. Our analysis on DONUT reveals that existing encoders retain only limited global topological signals, yet FILTR successfully leverages information produced by these encoders to approximate persistence diagrams. Our approach enables, for the first time, data-driven extraction of persistence diagrams from raw point clouds through an efficient learnable feed-forward mechanism.",
-    "citation": "BIBTEX_CITATION_HERE",
+    "citation": "@inproceedings{Martinez2026FILTR,
+  title={FILTR: Extracting Topological Features from Pretrained 3D Models},
+  author={Louis Martinez and Maks Ovsjanikov},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2026}
+}",
     "isAccessibleForFree": true,
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "mainEntity": {
@@ -360,22 +365,21 @@
       </div>
     </section>
 
-    <section class="section">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column is-four-fifths">
-            <h2 class="title is-4 has-text-centered">Citation</h2>
-            <div class="content">
-              <p class="has-text-centered">If you find this work useful, please consider citing it:</p>
-              <pre><code>@inproceedings{Martinez2026FILTR,
+    <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <div class="bibtex-header">
+          <h2 class="title">BibTeX</h2>
+          <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+            <i class="fas fa-copy"></i>
+            <span class="copy-text">Copy</span>
+          </button>
+        </div>
+        <pre id="bibtex-code"><code>@inproceedings{Martinez2026FILTR,
   title={FILTR: Extracting Topological Features from Pretrained 3D Models},
   author={Louis Martinez and Maks Ovsjanikov},
   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
   year={2026}
 }</code></pre>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
