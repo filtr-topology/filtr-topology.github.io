@@ -8,7 +8,8 @@
   <!-- Primary Meta Tags -->
   <meta name="title"
     content="FILTR:Extracting Topological Features from Pretrained 3D Models | Louis Martinez, Maks Ovsjanikov">
-  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <meta name="description"
+    content="Enbabling data-driven extraction of persistence diagrams from raw point clouds through an efficient learnable feed-forward mechanism.">
   <meta name="keywords"
     content="Topological Data Analysis, 3D Point Clouds, Point Clouds Encoders, Persistence Diagrams">
   <meta name="author" content="Louis Martinez, Maks Ovsjanikov">
@@ -20,7 +21,8 @@
   <meta property="og:site_name" content="LIX, Ecole Polytechnique, IP Paris">
   <meta property="og:title" content="FILTR: Extracting Topological Features from Pretrained 3D Models">
   <!-- TODO: Same as description above -->
-  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <meta property="og:description"
+    content="Enbabling data-driven extraction of persistence diagrams from raw point clouds through an efficient learnable feed-forward mechanism.">
   <meta property="og:url" content="https://filtr-topology.github.io/">
   <!-- TODO: Create a 1200x630px preview image and update path -->
   <meta property="og:image" content="https://filtr-topology.github.io/static/images/social_preview.png">
@@ -43,7 +45,8 @@
   <!-- TODO: Same as paper title above -->
   <meta name="twitter:title" content="FILTR: Extracting Topological Features from Pretrained 3D Models">
   <!-- TODO: Same as description above -->
-  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <meta name="twitter:description"
+    content="Enbabling data-driven extraction of persistence diagrams from raw point clouds through an efficient learnable feed-forward mechanism.">
   <!-- TODO: Same as social preview image above -->
   <meta name="twitter:image" content="https://filtr-topology.github.io/static/images/social_preview.png">
   <meta name="twitter:image:alt"
@@ -116,7 +119,7 @@
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
     "headline": "FILTR: Extracting Topological Features from Pretrained 3D Models",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
+    "description": "Enbabling data-driven extraction of persistence diagrams from raw point clouds through an efficient learnable feed-forward mechanism.",
     "author": [
       {
         "@type": "Person",
@@ -201,7 +204,7 @@
                 <span class="author-block">
                   <a href="https://lmartinez2001.github.io/" target="_blank">Louis Martinez</a>,</span>
                 <span class="author-block">
-                  <a href="https://www.lix.polytechnique.fr/~maks/K" target="_blank">Maks Ovsjanikov</a></span>
+                  <a href="https://www.lix.polytechnique.fr/~maks/" target="_blank">Maks Ovsjanikov</a></span>
               </div>
 
               <div class="is-size-5 publication-authors">
@@ -244,11 +247,12 @@
 
                   <!-- TODO: add data links -->
                   <span class="link-block">
-                    <a href="#" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <a href="https://huggingface.co/datasets/LouisM2001/donut" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
-                        <i class="fas fa-database"></i>
+                        <img src="static/images/hf-logo.svg" alt="Hugging Face logo" class="hf-logo">
                       </span>
-                      <span>Data (Coming soon)</span>
+                      <span>Dataset</span>
                     </a>
                   </span>
 
@@ -270,6 +274,91 @@
       </div>
     </section>
 
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3 has-text-centered">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                Recent advances in pretraining 3D point cloud encoders (e.g., Point-BERT, Point-MAE) have produced
+                powerful models, whose abilities are typically evaluated on geometric or semantic tasks. At the same
+                time, topological descriptors have been shown to provide informative summaries of a shape's multiscale
+                structure. In this paper we pose the question whether topological information can be derived from
+                features produced by 3D encoders. To address this question, we first introduce DONUT, a synthetic
+                benchmark with controlled topological complexity, and propose FILTR (Filtration Transformer), a
+                learnable framework to predict persistence diagrams directly from frozen encoders. FILTR adapts a
+                transformer decoder to treat diagram generation as a set prediction task. Our analysis on DONUT reveals
+                that existing encoders retain only limited global topological signals, yet FILTR successfully leverages
+                information produced by these encoders to approximate persistence diagrams. Our approach enables, for
+                the first time, data-driven extraction of persistence diagrams from raw point clouds through an
+                efficient learnable feed-forward mechanism.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3 has-text-centered">Method</h2>
+            <figure class="image has-text-centered">
+              <img src="static/images/teaser.png" alt="Method teaser" style="display: inline-block;">
+            </figure>
+            <div class="content has-text-justified" style="margin-top: 1.5rem;">
+              <p>
+                We evaluate the topological understanding of pretrained 3D point-cloud encoders through three
+                complementary tasks. First, we probe frozen encoder features to predict the number of connected
+                components of the underlying shape. Second, we use the same probing setting to predict genus, providing
+                a more demanding test of global topological structure. Third, we measure the alignment between encoder
+                features and topological descriptors derived from persistence diagrams using CKA, in order to assess
+                whether multiscale topological information is present in the learned representations and how accessible
+                it is.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3 has-text-centered">FILTR</h2>
+            <figure class="image has-text-centered">
+              <img src="static/images/filtr_img.png" alt="FILTR architecture" style="display: inline-block;">
+            </figure>
+            <div class="content has-text-justified" style="margin-top: 1.5rem;">
+              <p>
+                FILTR (Filtration Transformer) is a DETR-inspired framework for predicting persistence diagrams
+                directly from point clouds in a feed-forward manner. A frozen pretrained 3D encoder first produces
+                point-cloud features and associated 3D positional information, which are projected to the decoder
+                dimension and used to condition a transformer decoder through cross-attention. The decoder processes a
+                fixed set of learned queries and outputs unordered persistence pairs together with existence scores,
+                allowing the model to represent both genuine topological features and empty slots. Following the paper,
+                FILTR enforces the birth-death ordering in its pair parameterization and is trained with a
+                set-prediction objective combining Hungarian matching, regression on matched pairs, an existence loss,
+                and a diagonal regularizer for unmatched predictions. This design lets FILTR leverage frozen 3D
+                features to approximate persistence diagrams efficiently, without iterative post-processing or
+                end-to-end retraining of the backbone.
+              </p>
+            </div>
+            <figure class="image has-text-centered" style="margin-top: 1.5rem;">
+              <img src="static/images/pd_diag_success.png" alt="FILTR persistence diagram generation results"
+                style="display: inline-block;">
+            </figure>
+            <p class="has-text-centered" style="margin-top: 1rem;">
+              Some persistence diagram generation results. Although FILTR is trained on DONUT, it still manages to
+              accurately reconstruct persistence diagrams for more challenging point clouds without any fine-tuning.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
 
@@ -280,13 +369,11 @@
             <div class="content">
 
               <p>
-                This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
-                  target="_blank">Academic Project Page Template</a> which was adopted from the <a
-                  href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-                You are free to borrow the source code of this website, we just ask that you link back to this page in
-                the footer. <br> This website is licensed under a <a rel="license"
-                  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-                  Commons Attribution-ShareAlike 4.0 International License</a>.
+                This website was built with the <a
+                  href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic
+                  Project Page Template</a> and is licensed under a <a rel="license"
+                  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons
+                  Attribution-ShareAlike 4.0 International License</a>.
               </p>
 
             </div>
