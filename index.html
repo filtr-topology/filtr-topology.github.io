@@ -39,7 +39,7 @@
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <!-- TODO: Replace with your lab/institution Twitter handle -->
-  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
+  <meta name="twitter:site" content="@IP_Paris_">
   <!-- TODO: Replace with first author's Twitter handle -->
   <meta name="twitter:creator" content="@louis_m01">
   <!-- TODO: Same as paper title above -->
@@ -219,34 +219,45 @@
 
               <div class="column has-text-centered">
                 <div class="publication-links">
+
                   <!-- TODO: Update with your arXiv paper ID -->
                   <span class="link-block">
-                    <a href="#" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <a href="#" class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
+                        <i class="ai ai-arxiv"></i>
                       </span>
-                      <span>Paper (Coming soon)</span>
+                      <span>Paper (Soon)</span>
                     </a>
                   </span>
 
                   <!-- TODO: Add your supplementary material PDF or remove this section
                   <span class="link-block">
                     <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span> -->
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Supplementary</span>
+                  </a>
+                </span> -->
 
                   <!-- TODO: Replace with your GitHub repository URL -->
                   <span class="link-block">
-                    <a href="#" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <a href="#" class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fab fa-github"></i>
                       </span>
-                      <span>Code (Coming soon)</span>
+                      <span>Code (Soon)</span>
+                    </a>
+                  </span>
+
+                  <span class="link-block">
+                    <a href="https://huggingface.co/LouisM2001" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <img src="static/images/hf-logo.svg" alt="Hugging Face logo" class="hf-logo">
+                      </span>
+                      <span>Models (Soon)</span>
                     </a>
                   </span>
 
@@ -283,6 +294,14 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column is-four-fifths">
+            <h2 class="title is-4 has-text-centered">TL;DR</h2>
+            <div class="content has-text-justified">
+              <p>
+                We present the first study of topological understanding in pretrained 3D point cloud encoders,
+                introduce DONUT, a benchmark of 30K topologically annotated shapes, and propose a framework to
+                extract the topology of a point cloud from pretrained encoder representations.
+              </p>
+            </div>
             <h2 class="title is-3 has-text-centered">Abstract</h2>
             <div class="content has-text-justified">
               <p>
@@ -333,6 +352,29 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column is-four-fifths">
+            <h2 class="title is-3 has-text-centered">DONUT</h2>
+            <figure class="image has-text-centered">
+              <img src="static/images/donut_samples.png" alt="DONUT dataset samples" style="display: inline-block;">
+            </figure>
+            <div class="content has-text-justified" style="margin-top: 1.5rem;">
+              <p>
+                DONUT is a synthetic benchmark of <strong>30K</strong> meshes annotated with two key topological
+                quantities: the total genus of each sample and its number of connected components. The benchmark spans
+                genera from <strong>0</strong> to <strong>10</strong> and between <strong>1</strong> and
+                <strong>6</strong> connected components, while keeping the distributions balanced. Our probing
+                experiments fully rely on this benchmark to evaluate what pretrained 3D point cloud encoders retain
+                about topology, and we also use DONUT to train the encoder used in FILTR.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column is-four-fifths">
             <h2 class="title is-3 has-text-centered">FILTR</h2>
             <figure class="image has-text-centered">
               <img src="static/images/filtr_img.png" alt="FILTR architecture" style="display: inline-block;">
@@ -349,7 +391,10 @@
                 set-prediction objective combining Hungarian matching, regression on matched pairs, an existence loss,
                 and a diagonal regularizer for unmatched predictions. This design lets FILTR leverage frozen 3D
                 features to approximate persistence diagrams efficiently, without iterative post-processing or
-                end-to-end retraining of the backbone.
+                end-to-end retraining of the backbone. In the low-data regime, FILTR reduces prediction error by
+                <strong>73%</strong> compared to its end-to-end counterparts. When using pretrained encoders, we only
+                need to train <strong>5.7 million</strong> parameters, compared to roughly <strong>8 million</strong>
+                for the end-to-end baselines.
               </p>
             </div>
             <figure class="image has-text-centered" style="margin-top: 1.5rem;">
