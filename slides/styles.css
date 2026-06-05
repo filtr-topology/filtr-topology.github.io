@@ -250,12 +250,12 @@ body {
   opacity: 1;
 }
 
-.motivation.step-3 .motivation-lower {
+.motivation.motivation-final .motivation-lower {
   grid-template-columns: 520px 1fr;
   gap: 28px;
 }
 
-.motivation.step-3 .motivation-figure-wrap {
+.motivation.motivation-final .motivation-figure-wrap {
   width: 520px;
   margin-left: 20px;
 }
@@ -272,7 +272,7 @@ body {
   transition: opacity 360ms ease, transform 420ms cubic-bezier(0.2, 0.78, 0.22, 1);
 }
 
-.motivation.step-3 .motivation-warnings.visible .motivation-warning {
+.motivation.motivation-final .motivation-warnings.visible .motivation-warning {
   opacity: 1;
   transform: translateY(0);
   transition-delay: 680ms;
@@ -1514,60 +1514,78 @@ body {
   transform: rotate(5deg);
 }
 
-.cka.step-1 .cka-source {
+.cka.step-1 .cka-source,
+.cka.auto-cka.present .cka-source {
   opacity: 1;
 }
 
+.cka.auto-cka.step-1 .tokens,
+.cka.auto-cka.step-1 .cka-action,
 .cka.step-2 .tokens,
 .cka.step-2 .cka-action {
   opacity: 1;
   transform: translateY(0);
 }
 
+.cka.auto-cka.step-1 .token-ghost,
 .cka.step-2 .token-ghost {
   opacity: 0;
 }
 
+.cka.auto-cka.step-2 .plane-img,
+.cka.auto-cka.step-2 .token-dot,
 .cka.step-3 .plane-img,
 .cka.step-3 .token-dot {
   opacity: 1;
 }
 
+.cka.auto-cka.step-2 .plane-img,
 .cka.step-3 .plane-img {
   transition-delay: 720ms;
 }
 
+.cka.auto-cka.step-2 .token-dot,
 .cka.step-3 .token-dot {
   transition: opacity 250ms ease, left 650ms ease 720ms, right 650ms ease 720ms, top 650ms ease 720ms;
 }
 
+.cka.auto-cka.step-2 .token-ghost,
 .cka.step-3 .token-ghost {
   opacity: 0.22;
 }
 
+.cka.auto-cka.step-2 .tok-left,
 .cka.step-3 .tok-left {
   opacity: 0;
   transform: translate(0, 32px) scale(0.08);
 }
 
+.cka.auto-cka.step-2 .tok-right,
 .cka.step-3 .tok-right {
   opacity: 0;
   transform: translate(-7px, 32px) scale(0.08);
 }
 
+.cka.auto-cka.step-2 .tok-left i,
+.cka.auto-cka.step-2 .tok-right i,
 .cka.step-3 .tok-left i,
 .cka.step-3 .tok-right i {
   border-radius: 50%;
 }
 
+.cka.auto-cka.step-2 .left-dot,
 .cka.step-3 .left-dot {
   top: 336px;
 }
 
+.cka.auto-cka.step-2 .right-dot,
 .cka.step-3 .right-dot {
   top: 336px;
 }
 
+.cka.auto-cka.step-3 .cka-label,
+.cka.auto-cka.step-3 .aligned-spaces,
+.cka.auto-cka.step-3 .cka-arrows,
 .cka.step-4 .cka-label,
 .cka.step-4 .aligned-spaces,
 .cka.step-4 .cka-arrows {

@@ -36,11 +36,15 @@ function updateAnimationSteps() {
     const steps = section.querySelectorAll(".fragment.visible").length;
     section.classList.remove(
       "ph", "encoder", "cka", "quant-methods", "motivation", "quant-results", "usecases",
+      "motivation-final",
       "step-0", "step-1", "step-2", "step-3", "step-4", "step-5", "step-6", "step-7"
     );
     section.classList.add(name);
     for (let i = 0; i <= steps; i += 1) {
       section.classList.add(`step-${i}`);
+    }
+    if (name === "motivation" && section.querySelector(".motivation-warnings.visible")) {
+      section.classList.add("motivation-final");
     }
     if (name === "ph") updatePersistentHomologyGeometry(section, steps);
   });
