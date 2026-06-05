@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="122.55581" height="110.02053" id="svg15581" version="1.1" inkscape:version="0.48.4 r9939" sodipodi:docname="logo-LIX.svg" inkscape:export-filename="/tmp/logo-LIX-6537x5868.png" inkscape:export-xdpi="4800.1953" inkscape:export-ydpi="4800.1953">
+  <defs id="defs15583">
+    <inkscape:path-effect effect="rough_hatches" id="path-effect4367" is_visible="true" direction="399.2768,574.45075 , 9.234,0" dist_rdm="25;1" growth="0" do_bend="false" bender="399.2768,579.45075 , 5,0" bottom_edge_variation="4.8312;1" top_edge_variation="4.8312;1" bottom_tgt_variation="0;1" top_tgt_variation="0;1" scale_bf="1" scale_bb="1" scale_tf="1" scale_tb="1" top_smth_variation="0;1" bottom_smth_variation="0;1" fat_output="true" stroke_width_top="1" stroke_width_bottom="1" front_thickness="1" back_thickness="0.25"/>
+    <inkscape:path-effect effect="spiro" id="path-effect4159" is_visible="true"/>
+    <inkscape:path-effect effect="bend_path" id="path-effect4157" is_visible="true" bendpath="m 380.8088,579.45075 36.936,0" prop_scale="1" scale_y_rel="false" vertical="false"/>
+    <filter id="filter15528" inkscape:menu-tooltip="Draws a black outline around" inkscape:menu="ABCs" inkscape:label="Black outline" color-interpolation-filters="sRGB">
+      <feGaussianBlur id="feGaussianBlur15530" stdDeviation="2" in="SourceAlpha" result="result0"/>
+      <feComposite k4="0" k1="0" id="feComposite15532" in2="result0" result="result3" operator="arithmetic" in="SourceGraphic" k2="1" k3="10"/>
+      <feComposite id="feComposite15534" in2="result3" operator="in" in="result3" result="result4"/>
+    </filter>
+    <filter id="filter15520" inkscape:menu-tooltip="Draws a black outline around" inkscape:menu="ABCs" inkscape:label="Black outline" color-interpolation-filters="sRGB">
+      <feGaussianBlur id="feGaussianBlur15522" stdDeviation="2" in="SourceAlpha" result="result0"/>
+      <feComposite k4="0" k1="0" id="feComposite15524" in2="result0" result="result3" operator="arithmetic" in="SourceGraphic" k2="1" k3="10"/>
+      <feComposite id="feComposite15526" in2="result3" operator="in" in="result3" result="result4"/>
+    </filter>
+    <filter id="filter15536" inkscape:menu-tooltip="Draws a black outline around" inkscape:menu="ABCs" inkscape:label="Black outline" color-interpolation-filters="sRGB">
+      <feGaussianBlur id="feGaussianBlur15538" stdDeviation="2" in="SourceAlpha" result="result0"/>
+      <feComposite k4="0" k1="0" id="feComposite15540" in2="result0" result="result3" operator="arithmetic" in="SourceGraphic" k2="1" k3="10"/>
+      <feComposite id="feComposite15542" in2="result3" operator="in" in="result3" result="result4"/>
+    </filter>
+    <filter id="filter3025" inkscape:label="Drop Shadow" color-interpolation-filters="sRGB">
+      <feFlood id="feFlood3027" flood-opacity="0.5" flood-color="rgb(0,0,0)" result="flood"/>
+      <feComposite id="feComposite3029" in2="SourceGraphic" in="flood" operator="in" result="composite1"/>
+      <feGaussianBlur id="feGaussianBlur3031" stdDeviation="2" result="blur"/>
+      <feOffset id="feOffset3033" dx="4" dy="4" result="offset"/>
+      <feComposite id="feComposite3035" in2="offset" in="SourceGraphic" operator="over" result="composite2"/>
+    </filter>
+    <filter inkscape:collect="always" id="filter3965" color-interpolation-filters="sRGB">
+      <feGaussianBlur inkscape:collect="always" stdDeviation="0.1908" id="feGaussianBlur3967"/>
+    </filter>
+    <filter inkscape:collect="always" id="filter4311" color-interpolation-filters="sRGB">
+      <feGaussianBlur inkscape:collect="always" stdDeviation="0.21312" id="feGaussianBlur4313"/>
+    </filter>
+    <filter inkscape:collect="always" id="filter4436" color-interpolation-filters="sRGB">
+      <feGaussianBlur inkscape:collect="always" stdDeviation="0.21312" id="feGaussianBlur4438"/>
+    </filter>
+    <filter inkscape:collect="always" id="filter4444" color-interpolation-filters="sRGB">
+      <feGaussianBlur inkscape:collect="always" stdDeviation="0.25092" id="feGaussianBlur4446"/>
+    </filter>
+    <filter inkscape:collect="always" id="filter4460" color-interpolation-filters="sRGB">
+      <feGaussianBlur inkscape:collect="always" stdDeviation="0.25096" id="feGaussianBlur4462"/>
+    </filter>
+    <filter id="filter4472" inkscape:label="Drop Shadow" color-interpolation-filters="sRGB">
+      <feFlood id="feFlood4474" flood-opacity="0.5" flood-color="rgb(0,0,0)" result="flood"/>
+      <feComposite id="feComposite4476" in2="SourceGraphic" in="flood" operator="in" result="composite1"/>
+      <feGaussianBlur id="feGaussianBlur4478" stdDeviation="2" result="blur"/>
+      <feOffset id="feOffset4480" dx="4" dy="4" result="offset"/>
+      <feComposite id="feComposite4482" in2="offset" in="SourceGraphic" operator="over" result="composite2"/>
+    </filter>
+  </defs>
+  <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="5.6" inkscape:cx="52.811112" inkscape:cy="45.662809" inkscape:document-units="px" inkscape:current-layer="layer1" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="958" inkscape:window-height="1178" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="0"/>
+  <metadata id="metadata15586">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <dc:title/>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-318.722,-508.80662)">
+    <g id="g4464" style="filter:url(#filter4472)">
+      <g transform="translate(105.9028,311.39657)" style="filter:url(#filter15520)" id="g15516">
+        <path inkscape:connector-curvature="0" style="font-size:72px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#bdd3e0;fill-opacity:1;stroke:#bdd3e0;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;filter:url(#filter4311);font-family:Bitstream Charter;-inkscape-font-specification:Bitstream Charter Bold Italic" d="m 236.874,233.85818 0,3.384 4.536,0.36 0.72,1.008 -7.272,38.736 -1.152,0.936 -4.464,0.432 0,3.456 34.2,0 2.736,-14.184 -5.184,0 -2.808,9 -1.296,1.008 -13.032,0 7.344,-39.384 1.224,-0.936 4.536,-0.36 0,-3.456 -20.088,0" id="path4052-9-3-0-8"/>
+        <path inkscape:connector-curvature="0" style="font-size:72px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#bdd3e0;fill-opacity:1;stroke:#bdd3e0;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;filter:url(#filter3965);font-family:Bitstream Charter;-inkscape-font-specification:Bitstream Charter Bold Italic" d="m 259.05,214.49818 0,3.456 4.68,0.288 0.72,1.008 -7.272,38.592 -1.08,1.08 -4.752,0.36 0,3.528 20.376,0 0,-3.528 -4.68,-0.288 -0.864,-1.008 7.272,-38.736 1.152,-1.008 4.752,-0.288 0,-3.456 -20.304,0" id="path4054-2-1-4-1"/>
+      </g>
+      <g style="filter:url(#filter4460)" id="g4396">
+        <path inkscape:connector-curvature="0" id="path3016-5-9-0-9" style="font-size:72px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#e20040;fill-opacity:1;stroke:#e20040;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;filter:url(#filter15520);font-family:Bitstream Charter;-inkscape-font-specification:Bitstream Charter Bold Italic" d="m 403.1708,578.07775 16.81,-18.951 4.68,-0.432 0,-3.384 -16.2,0 0,3.384 4.032,0.36 0.432,1.008 -11.664,13.57 m -6.014,5.711 -17.53,19.743 -0.936,0.648 -4.176,0.432 0,3.456 17.208,0 0,-3.456 -4.536,-0.36 -0.72,-1.008 12.744,-14.4"/>
+        <path inkscape:connector-curvature="0" style="font-size:72px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffe00d;fill-opacity:1;stroke:#ffe00d;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;filter:url(#filter15520);font-family:Bitstream Charter;-inkscape-font-specification:Bitstream Charter Bold Italic" d="m 395.3528,560.19075 0.792,-1.08 4.392,-0.432 0,-3.384 -19.728,0 0,3.528 4.536,0.288 0.576,0.648 10.008,22.284 7.344,16.668 -0.864,1.08 -4.608,0.36 0,3.456 19.944,0 0,-3.384 -4.392,-0.36 -0.648,-0.648 -10.584,-23.688 z" id="path4056-2-9-5-6"/>
+      </g>
+    </g>
+  </g>
+</svg>
