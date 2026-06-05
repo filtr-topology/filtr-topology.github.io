@@ -250,12 +250,12 @@ body {
   opacity: 1;
 }
 
-.motivation.step-4 .motivation-lower {
+.motivation.step-3 .motivation-lower {
   grid-template-columns: 520px 1fr;
   gap: 28px;
 }
 
-.motivation.step-4 .motivation-figure-wrap {
+.motivation.step-3 .motivation-figure-wrap {
   width: 520px;
   margin-left: 20px;
 }
@@ -272,7 +272,7 @@ body {
   transition: opacity 360ms ease, transform 420ms cubic-bezier(0.2, 0.78, 0.22, 1);
 }
 
-.motivation.step-4 .motivation-warnings.visible .motivation-warning {
+.motivation.step-3 .motivation-warnings.visible .motivation-warning {
   opacity: 1;
   transform: translateY(0);
   transition-delay: 680ms;
