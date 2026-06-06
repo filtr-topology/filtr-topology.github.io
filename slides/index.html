@@ -85,7 +85,7 @@
           <article class="contrib green fragment">
             <span>2</span>
             <h3>FILTR: Filtration Transformer</h3>
-            <p class="contrib-subtitle">Feed-forward persistence prediction from frozen encoder features.</p>
+            <p class="contrib-subtitle">Feed-forward topology prediction from frozen encoder features.</p>
             <img src="assets/filtr_pipeline.png" alt="FILTR pipeline">
           </article>
           <article class="contrib orange fragment">
@@ -195,6 +195,11 @@
         <div class="anim-wrap">
           <svg class="ph-scene" viewBox="0 0 1200 620" role="img"
             aria-label="Stepwise persistent homology filtration animation">
+            <defs>
+              <marker id="ph-salient-arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+                <path d="M0,0 L6,3 L0,6 z"></path>
+              </marker>
+            </defs>
             <g class="ph-complex">
               <text class="cloud-caption" x="245" y="595">Point cloud</text>
               <circle class="ball p1" cx="210" cy="160" r="0"></circle>
@@ -255,7 +260,11 @@
               <circle class="pd h0" cx="720" cy="285" r="8"></circle>
               <circle class="pd h1" cx="942" cy="199" r="12"></circle>
               <text class="callout h1" x="980" y="205">Loop</text>
-              <text class="callout h0" x="742" y="320">Connected components</text>
+              <text class="callout h0" x="742" y="380">Connected components</text>
+              <g class="ph-salient-annotation">
+                <line x1="895" y1="315" x2="830" y2="250"></line>
+                <text x="900" y="300">more salient structure</text>
+              </g>
             </g>
             <g class="bar-to-diagram">
               <circle class="morph-dot h0 m1" cx="848" cy="220" r="9"></circle>
@@ -270,6 +279,21 @@
         <span class="fragment"></span><span class="fragment"></span><span class="fragment"></span><span
           class="fragment"></span><span class="fragment"></span><span class="fragment"></span><span
           class="fragment"></span>
+      </section>
+
+      <section class="terminology-slide">
+        <img class="terminology-donut terminology-donut-tl" src="assets/donut-bullet.jpg" alt="" aria-hidden="true">
+        <img class="terminology-donut terminology-donut-tr" src="assets/donut-bullet.jpg" alt="" aria-hidden="true">
+        <img class="terminology-donut terminology-donut-bl" src="assets/donut-bullet.jpg" alt="" aria-hidden="true">
+        <img class="terminology-donut terminology-donut-br" src="assets/donut-bullet.jpg" alt="" aria-hidden="true">
+        <div class="terminology-box">
+          <h2>TERMINOLOGY ALERT</h2>
+          <ul>
+            <li>Filtration</li>
+            <li>Persistence diagram</li>
+            <li>The farther from the diagonal the more salient the corresponding feature</li>
+          </ul>
+        </div>
       </section>
 
       <section class="animation-slide auto-cka" data-anim="cka">
@@ -370,8 +394,8 @@
         <h2>Qualitative Results</h2>
         <img class="result-figure qualitative" src="assets/qualitative_predictions.png"
           alt="Qualitative persistence diagram predictions">
-        <div class="takeaway fragment">Predicted diagrams recover the main structures across DONUT,
-          ModelNet40, and ABC.</div>
+        <div class="takeaway fragment">Predicted diagrams recover the main structures across
+          ModelNet40, and ABC, although trained on DONUT</div>
         <div class="qualitative-warning-grid">
           <div class="takeaway red-takeaway fragment">Predictions are approximate.</div>
           <div class="takeaway red-takeaway fragment">Most persistent features are not captured.</div>

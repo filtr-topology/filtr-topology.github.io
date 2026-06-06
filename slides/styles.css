@@ -749,6 +749,119 @@ body {
   font-size: 22px;
 }
 
+.ph-salient-annotation line {
+  stroke: var(--orange);
+  stroke-width: 8;
+  stroke-linecap: round;
+  marker-end: url(#ph-salient-arrow);
+}
+
+.ph-salient-annotation text {
+  fill: var(--orange);
+  font-size: 23px;
+  font-weight: 800;
+}
+
+#ph-salient-arrow path {
+  fill: var(--orange);
+}
+
+.terminology-slide {
+  position: relative;
+  display: grid !important;
+  place-items: center;
+}
+
+.terminology-box {
+  width: min(880px, 82%);
+  padding: 48px 64px 54px;
+  border: 8px solid var(--orange);
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 16px 42px rgba(23, 32, 42, 0.12);
+}
+
+.terminology-box h2 {
+  margin: 0 0 30px;
+  color: var(--orange);
+  font-size: 58px;
+  line-height: 1;
+  text-align: center;
+}
+
+.terminology-box ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.terminology-box li {
+  position: relative;
+  padding-left: 46px;
+  margin-bottom: 20px;
+  color: var(--text);
+  font-size: 34px;
+  line-height: 1.18;
+  font-weight: 650;
+}
+
+.terminology-box li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.08em;
+  width: 30px;
+  height: 30px;
+  background: url("assets/donut-bullet.jpg") center / contain no-repeat;
+}
+
+.terminology-box li:last-child {
+  margin-bottom: 0;
+}
+
+.terminology-donut {
+  position: absolute;
+  width: 76px;
+  height: 76px;
+  object-fit: contain;
+  animation: terminology-blink 780ms ease-in-out infinite alternate;
+}
+
+.terminology-donut-tl {
+  left: 34px;
+  top: 34px;
+}
+
+.terminology-donut-tr {
+  right: 34px;
+  top: 34px;
+  animation-delay: 160ms;
+}
+
+.terminology-donut-bl {
+  left: 34px;
+  bottom: 34px;
+  animation-delay: 320ms;
+}
+
+.terminology-donut-br {
+  right: 34px;
+  bottom: 34px;
+  animation-delay: 480ms;
+}
+
+@keyframes terminology-blink {
+  from {
+    opacity: 0.18;
+    transform: scale(0.88);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1.08);
+  }
+}
+
 .ph.step-1 .edge.e45,
 .ph.step-1 .edge.e51 {
   opacity: 1;
