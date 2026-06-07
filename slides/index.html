@@ -392,13 +392,26 @@
 
       <section class="qualitative-slide">
         <h2>Qualitative Results</h2>
-        <img class="result-figure qualitative" src="assets/qualitative_predictions.png"
-          alt="Qualitative persistence diagram predictions">
-        <div class="takeaway fragment">Predicted diagrams recover the main structures across
+        <div class="qualitative-figure-wrap">
+          <img class="result-figure qualitative" src="assets/qualitative_predictions.png"
+            alt="Qualitative persistence diagram predictions">
+          <span class="qualitative-highlight fragment" data-fragment-index="2"
+            style="left: 196px; top: 40px; width: 20px; height: 20px;"></span>
+          <span class="qualitative-highlight fragment" data-fragment-index="2"
+            style="left: 417px; top: 40px; width: 20px; height: 20px;"></span>
+          <span class="qualitative-highlight fragment" data-fragment-index="2"
+            style="left: 775px; top: 48px; width: 20px; height: 20px;"></span>
+          <span class="qualitative-highlight fragment" data-fragment-index="2"
+            style="left: 953px; top: 37px; width: 20px; height: 20px;"></span>
+          <span class="qualitative-highlight fragment" data-fragment-index="2"
+            style="left: 12px; top: 78px; width: 20px; height: 20px;"></span>
+        </div>
+        <div class="takeaway fragment" data-fragment-index="0">Predicted diagrams recover the main structures across
           ModelNet40, and ABC, although trained on DONUT</div>
         <div class="qualitative-warning-grid">
-          <div class="takeaway red-takeaway fragment">Predictions are approximate.</div>
-          <div class="takeaway red-takeaway fragment">Most persistent features are not captured.</div>
+          <div class="takeaway red-takeaway fragment" data-fragment-index="1">Predictions are approximate.</div>
+          <div class="takeaway red-takeaway fragment" data-fragment-index="2">Most persistent features are not captured.
+          </div>
         </div>
       </section>
 
@@ -428,7 +441,11 @@
 
       <section class="qr-slide">
         <h2>Project Page</h2>
-        <img class="qr" src="assets/qr-code.png" alt="QR code to the project page">
+        <div class="qr-promo-row">
+          <div class="qr-promo">FREE DONUTS AT THE POSTER</div>
+          <img class="qr" src="assets/qr-code.png" alt="QR code to the project page">
+          <div class="qr-promo">FREE DONUTS AT THE POSTER</div>
+        </div>
         <p>filtr-topology.github.io</p>
         <p class="poster-session">Poster #2</p>
       </section>
